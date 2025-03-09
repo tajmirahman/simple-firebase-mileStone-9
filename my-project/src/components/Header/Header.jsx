@@ -1,10 +1,11 @@
-import { Outlet } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 
 
 const Header = () => {
     return (
         <div>
-            <h1>THis is header page</h1>
+            <NavLink  to="/">Home</NavLink>
+            <NavLink style={{ marginLeft: '20px' }} to="/login">Login</NavLink>
         
         </div>
     );
